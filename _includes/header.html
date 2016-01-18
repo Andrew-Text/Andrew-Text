@@ -1,0 +1,71 @@
+<div id="header-tail">
+  <div id="slider-bg">
+    <div id="header">
+      <div id="masthead">
+
+        <!-- #branding -->
+        <div id="branding" role="banner">
+          <h1 id="site-title">
+            <span>
+            <a href="{{site.baseurl}}/" title="AllYourTexts" rel="home"><img src="{{site.basurl}}/images/logo.png" title="" alt="" /></a>
+            </span>
+          </h1>
+        </div>
+        <!-- #branding -->
+
+        <div id="access" class="#header .menu" role="navigation">
+          <!-- skip-Nav -->
+          <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+          
+          <!-- Menu -->
+          <div class="menu-header">
+            <ul id="menu-main-menu" class="menu">
+
+            {% assign currentPg = page.url %}
+
+              <li class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/index.html" %}current-menu-item current_page_item{% endif %}"><a href='/'>Home</a></li>
+
+            {% for post in site.posts %}
+              {% if post.menu-item %}
+              <li class="menu-item menu-item-type-post_type menu-item-object-page {% if post.url == currentPg %}current-menu-item current_page_item{% endif %}">
+                <a href='{% if post.breadcrumb == "github" %}{{site.url_GitHub}}{% else %}{{site.baseurl}}{{post.url}}{% endif %}' {% if post.breadcrumb == "github" %}onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://github.com/AllYourTexts/AllYourTexts', 'Github']);{% endif %}">{{post.breadcrumb}}</a>
+
+                {% if post.sub-nav %}
+                <ul class="sub-menu">
+                  {% for link in post.sub-nav.links %}
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page {% if link.url == currentPg %}current-menu-item current_page_item{% endif %}">
+                    <a href='{{site.baseurl}}{{link.url}}'>{{link.text}}</a> 
+                  </li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </li>
+              {% endif %}
+            {% endfor %}
+
+            </ul>
+          </div>
+        </div>
+        <!-- #access -->
+
+        {% if page.audience == "home" %}
+        <!-- homepage slider -->
+        {% include slider.html %}
+        {% else %}
+        <div id="faded">here</div>
+        {% endif %}
+
+        <div class="breadcrumbs">
+          <p id="breadcrumbs"><a href="/">Home</a>
+          <strong>{{page.breadcrumb}}</strong>
+          </p>
+
+        </div>
+      </div>
+      <!-- #masthead -->
+    </div>
+    <!-- #header -->
+  </div>
+  <!-- #slider-bg -->
+</div>
+<!-- #header-tail -->

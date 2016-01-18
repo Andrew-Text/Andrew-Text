@@ -199,7 +199,7 @@ body {
 		display: none;
 	}
 	body.page-id-14 .background-type-2 {
-		background: #fff url({{site.baseurl}}{{site.baseurl}}/images/background-type-1.gif) repeat-x 50% 0%;
+		background: #fff url({{site.baseurl}}/images/background-type-1.gif) repeat-x 50% 0%;
 		width: 100%;
 		overflow: hidden;
 	}
@@ -351,7 +351,7 @@ a {
 -------------------------------------------------------------- */
 
 #header-tail {
-	background: #acbca4 url({{site.baseurl}}{{site.baseurl}}/images/header-tail.jpg) no-repeat 50% 0%;
+	background: #acbca4 url({{site.baseurl}}/images/header-tail.jpg) no-repeat 50% 0%;
 }
 
 #header {
@@ -393,7 +393,7 @@ a {
 		}
 		
 		#header #searchform input[type="submit"] {
-			background: url({{site.baseurl}}{{site.baseurl}}/images/search-submit.gif) no-repeat 0% 0%;
+			background: url({{site.baseurl}}/images/search-submit.gif) no-repeat 0% 0%;
 			width: 30px;
 			height: 29px;
 			padding: 0;
@@ -486,7 +486,7 @@ a {
 		}
 		
 			#faded ul li ul li {
-				background: url({{site.baseurl}}{{site.baseurl}}/images/faded-marker.gif) no-repeat 0% 13px;
+				background: url({{site.baseurl}}/images/faded-marker.gif) no-repeat 0% 13px;
 				width: 388px;
 				padding: 0 0 0 15px;
 				vertical-align: top;
@@ -496,7 +496,7 @@ a {
 			}
 			
 				#faded ul li ul li a {
-					background: url({{site.baseurl}}{{site.baseurl}}/images/faded-line.gif) repeat-x 0% 0%;
+					background: url({{site.baseurl}}/images/faded-line.gif) repeat-x 0% 0%;
 					display: block;
 					padding: 2px 0 0 0;
 					text-decoration: none;
@@ -522,7 +522,7 @@ a {
 		}
 		
 			#faded ul li b a {
-				background: url({{site.baseurl}}{{site.baseurl}}/images/faded-link-tail.gif) repeat-x 0% 0%;
+				background: url({{site.baseurl}}/images/faded-link-tail.gif) repeat-x 0% 0%;
 				float: left;
 				height: 59px;
 				margin: 0 0 0 2px;
@@ -559,7 +559,7 @@ a {
 	}
 	
 	#faded a.prev {
-		background: url({{site.baseurl}}{{site.baseurl}}/images/button-prev.png) no-repeat 1px 0%;
+		background: url({{site.baseurl}}/images/button-prev.png) no-repeat 1px 0%;
 		display: block;
 		width: 16px;
 		height: 21px;
@@ -574,7 +574,7 @@ a {
 		}
 		
 	#faded a.next {
-		background: url({{site.baseurl}}{{site.baseurl}}/images/button-next.png) no-repeat 0% 0%;
+		background: url({{site.baseurl}}/images/button-next.png) no-repeat 0% 0%;
 		display: block;
 		width: 16px;
 		height: 21px;
@@ -731,7 +731,7 @@ h6 {
 		display: block;
 	}
 	.entry-meta span.comments-link {
-		background: url({{site.baseurl}}{{site.baseurl}}/images/comment-icon.gif) no-repeat 0% 2px;
+		background: url({{site.baseurl}}/images/comment-icon.gif) no-repeat 0% 2px;
 		float: right;
 		padding: 0 0 2px 23px;
 	}
@@ -751,7 +751,7 @@ h6 {
 }
 
 	.entry-content a.more-link {
-		background: url({{site.baseurl}}{{site.baseurl}}/images/link-tail.gif) repeat-x 50% 0%;
+		background: url({{site.baseurl}}/images/link-tail.gif) repeat-x 50% 0%;
 		position: relative;
 		float: left;
 		height: 49px;
@@ -1332,7 +1332,7 @@ h3#reply-title {
 -------------------------------------------------------------- */
 
 #footer {
-	background: #050404 url({{site.baseurl}}{{site.baseurl}}/images/footer-tail.gif) repeat-x 50% 0%;
+	background: #050404 url({{site.baseurl}}/images/footer-tail.gif) repeat-x 50% 0%;
 	width: 100%;
 	min-height: 185px;
 	height: auto !important;
@@ -1374,7 +1374,7 @@ h3#reply-title {
 	position: relative;
 }
 #site-generator a {
-	background: url({{site.baseurl}}{{site.baseurl}}/images/wordpress.png) center left no-repeat;
+	background: url({{site.baseurl}}/images/wordpress.png) center left no-repeat;
 	color: #666;
 	display: inline-block;
 	line-height: 16px;
@@ -1409,7 +1409,7 @@ img#wpstats {
 }
 
 .line-ver {
-	background: url({{site.baseurl}}{{site.baseurl}}/images/line-ver.gif) repeat-y 645px 0%;
+	background: url({{site.baseurl}}/images/line-ver.gif) repeat-y 645px 0%;
 	width: 100%;
 }
 
@@ -1431,7 +1431,7 @@ img#wpstats {
 	}
 	
 		#container ul li {
-			background: url({{site.baseurl}}{{site.baseurl}}/images/line-hor.gif) repeat-x 0% 0%;
+			background: url({{site.baseurl}}/images/line-hor.gif) repeat-x 0% 0%;
 			line-height: 30px;
 			font-size: 14px;
 			color: #000;
@@ -1451,13 +1451,13 @@ img#wpstats {
 				}
 
 .background-type-1 {
-	background: #fff url({{site.baseurl}}{{site.baseurl}}/images/background-type-1.gif) repeat-x 50% 0%;
+	background: #fff url({{site.baseurl}}/images/background-type-1.gif) repeat-x 50% 0%;
 	width: 100%;
 	overflow: hidden;
 }
 
 .background-type-2 {
-	background: #f2f4f6 url({{site.baseurl}}{{site.baseurl}}/images/background-type-2.gif) repeat-x 50% 0%;
+	background: #f2f4f6 url({{site.baseurl}}/images/background-type-2.gif) repeat-x 50% 0%;
 	width: 100%;
 	overflow: hidden;
 }

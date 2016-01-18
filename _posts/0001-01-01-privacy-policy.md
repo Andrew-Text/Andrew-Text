@@ -43,8 +43,8 @@ breadcrumb: "Privacy Policy"
       <p>By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.</p>
       <p><b>Contacting us</b></p>
       <p>If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at:<br>
-        <a href="{{site.baseurl}}">AllYourTexts</a><br>
-        <a href="{{site.baseurl}}">http://www.allyourtexts.com</a><br>
+        <a href="{{site.baseurl}}/">AllYourTexts</a><br>
+        <a href="{{site.baseurl}}/">http://www.allyourtexts.com</a><br>
         New York, NY<br>
         USA<br>
         <a href="mailto:privacy@allyourtexts.com">privacy@allyourtexts.com</a>

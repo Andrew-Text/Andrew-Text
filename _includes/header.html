@@ -23,9 +23,8 @@
 
             {% assign currentPg = page.url %}
 
-            {% for page in site.pages %}
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == currentPg %}current-menu-item current_page_item{% endif %}"><a href='{{site.baseurl}}{{page.url}}'>{{page.breadcrumb}}</a></li>
-            {% endfor %}
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/index.html" %}current-menu-item current_page_item{% endif %}"><a href='/'>Home</a></li>
+
             {% for post in site.posts %}
                   <li class="menu-item menu-item-type-post_type menu-item-object-page {% if post.url == currentPg %}current-menu-item current_page_item{% endif %}">
                     <a href='{% if post.breadcrumb == "github" %}{{site.url_GitHub}}{% else %}{{site.baseurl}}{{post.url}}{% endif %}' {% if post.breadcrumb == "github" %}onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://github.com/AllYourTexts/AllYourTexts', 'Github']);{% endif %}">{{post.breadcrumb}}</a>

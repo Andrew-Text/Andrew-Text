@@ -1,0 +1,22 @@
+# Sitewide configuration settings. Set `title` to the site title, which
+# will be appended to the URL following {{page.title}} 
+title: AllYourTexts
+
+permalink: /:title
+baseurl: http://Andrew-Text.github.io
+#baseurl: 
+markdown: rdiscount
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
+# Default values for HEAD section in default template
+# These can be overridden in individual posts in the yml frontmatter
+meta_Desc_Default: "Software for Windows to allow you to read your iPhone text (SMS) information while on your PC."
+meta_Keyword_Default: "iphone, sms, windows, win7, text, texts, texting"
+
+#GitHub URL for AllYourTexts application
+url_GitHub: "https://github.com/AllYourTexts/AllYourTexts"

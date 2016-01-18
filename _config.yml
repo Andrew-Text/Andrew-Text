@@ -3,7 +3,7 @@
 title: AllYourTexts
 
 permalink: /:title
-baseurl:
+baseurl: /
 markdown: rdiscount
 exclude:
   - .gitignore

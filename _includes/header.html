@@ -24,17 +24,17 @@
             {% assign currentPg = page.url %}
 
             {% for page in site.pages %}
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == currentPg %}current-menu-item current_page_item{% endif %}"><a href='{{page.url}}'>{{page.breadcrumb}}</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == currentPg %}current-menu-item current_page_item{% endif %}"><a href='{{site.baseurl}}{{page.url}}'>{{page.breadcrumb}}</a></li>
             {% endfor %}
             {% for post in site.posts %}
                   <li class="menu-item menu-item-type-post_type menu-item-object-page {% if post.url == currentPg %}current-menu-item current_page_item{% endif %}">
-                    <a href='{% if post.breadcrumb == "github" %}{{site.url_GitHub}}{% else %}{{post.url}}{% endif %}' {% if post.breadcrumb == "github" %}onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://github.com/AllYourTexts/AllYourTexts', 'Github']);{% endif %}">{{post.breadcrumb}}</a>
+                    <a href='{{site.baseurl}}{% if post.breadcrumb == "github" %}{{site.url_GitHub}}{% else %}{{post.url}}{% endif %}' {% if post.breadcrumb == "github" %}onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://github.com/AllYourTexts/AllYourTexts', 'Github']);{% endif %}">{{post.breadcrumb}}</a>
 
                     {% if post.sub-nav %}
                     <ul class="sub-menu">
                       {% for link in post.sub-nav.links %}
                       <li class="menu-item menu-item-type-post_type menu-item-object-page {% if link.url == currentPg %}current-menu-item current_page_item{% endif %}">
-                        <a href='{{link.url}}'>{{link.text}}</a> 
+                        <a href='{{site.baseurl}}{{link.url}}'>{{link.text}}</a> 
                       </li>
                       {% endfor %}
                     </ul>

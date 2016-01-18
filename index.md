@@ -3,6 +3,7 @@ layout: home
 audience: homepage
 breadcrumb: "Home"
 ---
+
 <ul>
   <li class="post-1">
     <h3 class="widget-title">What is it?</h3>

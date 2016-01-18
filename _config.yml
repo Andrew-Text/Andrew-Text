@@ -3,7 +3,8 @@
 title: AllYourTexts
 
 permalink: /:title
-baseurl: http://Andrew-Text.github.io
+#baseurl: http://Andrew-Text.github.io
+baseurl: 
 markdown: rdiscount
 exclude:
   - .gitignore

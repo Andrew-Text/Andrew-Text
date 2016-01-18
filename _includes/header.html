@@ -23,22 +23,24 @@
 
             {% assign currentPg = page.url %}
 
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/index.html" %}current-menu-item current_page_item{% endif %}"><a href='/'>Home</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/index.html" %}current-menu-item current_page_item{% endif %}"><a href='/'>Home</a></li>
 
             {% for post in site.posts %}
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page {% if post.url == currentPg %}current-menu-item current_page_item{% endif %}">
-                    <a href='{% if post.breadcrumb == "github" %}{{site.url_GitHub}}{% else %}{{site.baseurl}}{{post.url}}{% endif %}' {% if post.breadcrumb == "github" %}onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://github.com/AllYourTexts/AllYourTexts', 'Github']);{% endif %}">{{post.breadcrumb}}</a>
+              {% if post.menu-item %}
+              <li class="menu-item menu-item-type-post_type menu-item-object-page {% if post.url == currentPg %}current-menu-item current_page_item{% endif %}">
+                <a href='{% if post.breadcrumb == "github" %}{{site.url_GitHub}}{% else %}{{site.baseurl}}{{post.url}}{% endif %}' {% if post.breadcrumb == "github" %}onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://github.com/AllYourTexts/AllYourTexts', 'Github']);{% endif %}">{{post.breadcrumb}}</a>
 
-                    {% if post.sub-nav %}
-                    <ul class="sub-menu">
-                      {% for link in post.sub-nav.links %}
-                      <li class="menu-item menu-item-type-post_type menu-item-object-page {% if link.url == currentPg %}current-menu-item current_page_item{% endif %}">
-                        <a href='{{site.baseurl}}{{link.url}}'>{{link.text}}</a> 
-                      </li>
-                      {% endfor %}
-                    </ul>
-                    {% endif %}
+                {% if post.sub-nav %}
+                <ul class="sub-menu">
+                  {% for link in post.sub-nav.links %}
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page {% if link.url == currentPg %}current-menu-item current_page_item{% endif %}">
+                    <a href='{{site.baseurl}}{{link.url}}'>{{link.text}}</a> 
                   </li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </li>
+              {% endif %}
             {% endfor %}
 
             </ul>

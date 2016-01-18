@@ -1,13 +1,16 @@
+---
+title: CSS stylesheet
+---
 #header-tail {
-	background: #acbca4 url(../images/header-tail-1.jpg) no-repeat 50% 0%;
+	background: #acbca4 url({{site.baseurl}}/images/header-tail-1.jpg) no-repeat 50% 0%;
 }
 
 #slider-bg {
-	background: url(../images/path-bg-1.png) no-repeat 50% 166px;
+	background: url({{site.baseurl}}/images/path-bg-1.png) no-repeat 50% 166px;
 }
 
 	body.home #slider-bg {
-		background: url(../images/slider-bg-1.png) no-repeat 50% 166px;
+		background: url({{site.baseurl}}/images/slider-bg-1.png) no-repeat 50% 166px;
 	}
 
 .menu li.current-menu-item > a {
@@ -20,11 +23,11 @@
 }
 
 #faded ul li ul li a {
-	background: url(../images/faded-line-1.gif) repeat-x 0% 0%;
+	background: url({{site.baseurl}}/images/faded-line-1.gif) repeat-x 0% 0%;
 }
 
 .accordion dt a {
-	background: url(../images/accordion-divider-1.gif) no-repeat 12px 14px;
+	background: url({{site.baseurl}}/images/accordion-divider-1.gif) no-repeat 12px 14px;
 }
 
 .entry-title a:hover {

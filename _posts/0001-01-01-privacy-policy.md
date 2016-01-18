@@ -8,7 +8,7 @@ breadcrumb: "Privacy Policy"
   <h1 class="entry-title">Privacy Policy</h1>
   <div class="entry-content">
     <div class="privacy">
-      This Privacy Policy governs the manner in which AllYourTexts collects, uses, maintains and discloses information collected from users (each, a “User”) of the <a href="{{site.baseurl}}">http://www.allyourtexts.com</a> website (“Site”). This privacy policy applies to the Site and all products and services offered by AllYourTexts.
+      This Privacy Policy governs the manner in which AllYourTexts collects, uses, maintains and discloses information collected from users (each, a “User”) of the <a href="{{site.baseurl}}/">http://www.allyourtexts.com</a> website (“Site”). This privacy policy applies to the Site and all products and services offered by AllYourTexts.
       <p></p>
       <p><b>Personal identification information</b></p>
       <p>We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, place an order, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address, phone number. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.</p>

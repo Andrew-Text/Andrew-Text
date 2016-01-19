@@ -1,6 +1,7 @@
 ---
 layout: landing
 audience: landingpage
+permalink: /missing-conversations/
 breadcrumb: "Troubleshooting Old or Missing Conversations"
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: landing
 audience: landingpage
+permalink: /privacy-policy/
 breadcrumb: "Privacy Policy"
 ---
 

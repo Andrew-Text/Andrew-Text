@@ -1,6 +1,7 @@
 ---
 layout: landing
 audience: landingpage
+permalink: /features/
 breadcrumb: "Features"
 menu-item: true
 ---

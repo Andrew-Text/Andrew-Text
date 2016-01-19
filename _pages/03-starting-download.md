@@ -1,6 +1,7 @@
 ---
 layout: landing
 audience: landingpage
+permalink: "/starting-download/"
 breadcrumb: "Starting Dowload"
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: landing
 audience: landingpage
+permalink: /report-issue/
 breadcrumb: "Report an Issue"
 ---
 

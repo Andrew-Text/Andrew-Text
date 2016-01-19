@@ -1,7 +1,9 @@
 ---
 layout: home
 audience: homepage
+permalink: /
 breadcrumb: "Home"
+menu-item: true
 ---
 
 <ul>

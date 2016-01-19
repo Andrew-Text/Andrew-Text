@@ -5,6 +5,7 @@ title: AllYourTexts
 permalink: /:title
 baseurl: http://Andrew-Text.github.io
 #baseurl: 
+include: ['_pages']
 markdown: rdiscount
 exclude:
   - .gitignore

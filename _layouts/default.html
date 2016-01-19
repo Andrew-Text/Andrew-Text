@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  <!-- General metadata -->
+  <meta charset="UTF-8" />
+  <meta name="description" content="{% if page.meta-description %}{{page.meta-description }}{% else %}{{site.meta_Desc_Default}}{% endif %}" />
+  <meta name="keywords" content="{% if page.meta-keywords %}{{page.meta-keywords }}{% else %}{{site.meta_Keyword_Default}}{% endif %}" />
+
+  <title>{% if page.audience == "landingpage" %}{{page.breadcrumb}} | {% endif %}{{site.title}}</title>
+
+  <!-- Open Graph metadata --> 
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{% if page.audience == "landingpage" %}{{page.breadcrumb}}{% else %}{{site.title}}{% endif %}" />
+  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:site_name" content="AllYourTexts" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" media="all" href="{{site.baseurl}}/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/superfish.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/color2_styles.css" title="color2_styles" media="screen" />
+  <!--[if IE]>
+  <style type="text/css">
+    #header .menu > li, #header .menu li ul, #faded ul li b a, .entry-content a.more-link, .link-more, #commentform input[type="submit"], div.wpcf7 input[type="submit"], .module, .module input[type="submit"], .list-1 dd, .list-1 dd b a, .list-3 li, .list-6 li {
+    behavior:url(http://www.allyourtexts.com/wp-content/themes/theme1144/PIE.php)
+    }
+  </style>
+  <![endif]-->
+
+  <!-- JS Libraries -->
+  <script type="text/javascript" src="{{site.baseurl}}/js/jquery-1.4.4.min.js"></script>
+  <script type="text/javascript" src="{{site.baseurl}}/js/superfish.js"></script>
+  
+  <!-- Other JS from WP -->
+  <script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(function() {
+        $j('#header .menu').superfish({ 
+            delay:       1000,
+            animation:   {opacity:'show',height:'show'},
+            speed:       'fast',
+            autoArrows:  false,
+            dropShadows: false
+        }); 
+    });
+  </script>   
+  <script type="text/javascript" src="{{site.baseurl}}/js/jquery.faded.js"></script>
+  <script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(function(){
+        $j("#faded").faded({
+            speed: 500,
+            autoplay: 6000,
+            pagination: false,
+            autorestart: true
+        });
+    });
+  </script>
+  <script type="text/javascript" src="{{site.baseurl}}/js/accordion.js"></script>
+  <script type="text/javascript">
+    $j().ready(function(){
+        $j('.accordion').accordion({
+             active: '.active',
+             selectedClass: 'active',
+             header: "dt"
+        })
+    });
+  </script>
+  <script src="{{site.baseurl}}/js/styleswitch.js" type="text/javascript"></script>
+  <script src="{{site.baseurl}}/js/jquery.tabSlideOut.v1.2.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $j(function(){
+        $j('.slide-out-div').tabSlideOut({
+            tabHandle: '.handle',                     //class of the element that will become your tab
+            pathToTabImage: '/images/change.png', //path to the image for the tab //Optionally can be set using css
+            imageHeight: '148px',                     //height of tab image           //Optionally can be set using css
+            imageWidth: '37px',                       //width of tab image            //Optionally can be set using css
+            tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
+            speed: 300,                               //speed of animation
+            action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+            topPos: '87px',                          //position from the top/ use if tabLocation is left or right
+            leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+            fixedPosition: true                      //options: true makes it stick(fixed position) on scroll
+        });
+    
+    });
+  </script>
+  <script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(function() {
+        $j(".list-3 li:even").addClass("even");
+    });
+  </script>
+  <script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(function() {
+        $j(".list-6 li:even").addClass("even");
+    });
+  </script>
+  <script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(function() {
+        $j('input[type="text"]').addClass("idleField");
+                $j('input[type="text"]').focus(function() {
+                 $j(this).removeClass("idleField").addClass("focusField");
+                 if (this.value == this.defaultValue){ 
+                  this.value = '';
+         }
+         if(this.value != this.defaultValue){
+              this.select();
+             }
+            });
+            $j('input[type="text"]').blur(function() {
+             $j(this).removeClass("focusField").addClass("idleField");
+                 if ($j.trim(this.value) == ''){
+              this.value = (this.defaultValue ? this.defaultValue : '');
+         }
+            });
+    });
+  </script>
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-25595333-1']);
+    _gaq.push(['_gat._forceSSL']);
+    _gaq.push(['_trackPageview']);
+    
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    
+  </script>
+</head>
+
+<body class="{{page.audience}}">
+  <div id="wrapper" class="hfeed">
+
+    <!-- header -->
+    {% include header.html %}
+
+    <!-- content -->
+    {{content}}
+
+    <!-- footer -->
+    {% include footer.html %}
+
+  </div>
+  <!-- #wrapper -->
+
+</body>
+</html>

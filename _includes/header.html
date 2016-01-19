@@ -23,23 +23,21 @@
 
             {% assign currentPg = page.url %}
 
-              <li class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == "/index.html" %}current-menu-item current_page_item{% endif %}"><a href='/'>Home</a></li>
+            {% for page in site.pages %}
+              {% if page.menu-item %}
+                <li class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == currentPg %}current-menu-item current_page_item{% endif %}">
+                  <a href='{% if page.breadcrumb == "github" %}{{site.url_GitHub}}{% else %}{{site.baseurl}}{{page.url}}{% endif %}' {% if page.breadcrumb == "github" %}onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://github.com/AllYourTexts/AllYourTexts', 'Github']);{% endif %}">{{page.breadcrumb}}</a>
 
-            {% for post in site.posts %}
-              {% if post.menu-item %}
-              <li class="menu-item menu-item-type-post_type menu-item-object-page {% if post.url == currentPg %}current-menu-item current_page_item{% endif %}">
-                <a href='{% if post.breadcrumb == "github" %}{{site.url_GitHub}}{% else %}{{site.baseurl}}{{post.url}}{% endif %}' {% if post.breadcrumb == "github" %}onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://github.com/AllYourTexts/AllYourTexts', 'Github']);{% endif %}">{{post.breadcrumb}}</a>
-
-                {% if post.sub-nav %}
+                {% if page.sub-nav %}
                 <ul class="sub-menu">
-                  {% for link in post.sub-nav.links %}
+                  {% for link in page.sub-nav.links %}
                   <li class="menu-item menu-item-type-post_type menu-item-object-page {% if link.url == currentPg %}current-menu-item current_page_item{% endif %}">
                     <a href='{{site.baseurl}}{{link.url}}'>{{link.text}}</a> 
                   </li>
                   {% endfor %}
                 </ul>
                 {% endif %}
-              </li>
+                </li>
               {% endif %}
             {% endfor %}
 

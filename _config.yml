@@ -4,6 +4,7 @@ title: AllYourTexts
 
 permalink: /:title
 baseurl: http://AllYourTexts.github.io
+include: ['_pages']
 markdown: rdiscount
 exclude:
   - .gitignore

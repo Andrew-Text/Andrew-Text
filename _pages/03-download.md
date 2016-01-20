@@ -27,7 +27,7 @@ menu-item: true
     <p>&nbsp;</p>
     <h3 style="clear: both;">Requirements</h3>
     <ul style="margin-left: 30px;">
-      <li>+ Windows 8, Windows 7, Windows Vista SP1, or Windows XP SP3</li>
+      <li>+ Windows 10, Windows 8, Windows 7, Windows Vista SP1, or Windows XP SP3</li>
       <li>+ iTunes 9.0 or higher</li>
       <li>+ iPhone 6+, 6, 5C, 5, 4S, 4, 3GS, or 3G (sync’ed with the computer)</li>
     </ul>

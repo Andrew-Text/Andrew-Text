@@ -3,7 +3,7 @@
 title: AllYourTexts
 
 permalink: /:title
-baseurl: http://AllYourTexts.github.io
+baseurl: http://www.allyourtexts.com
 include: ['_pages']
 markdown: rdiscount
 exclude:

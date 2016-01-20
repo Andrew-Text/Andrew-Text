@@ -1,17 +1,18 @@
 ---
 layout: landing
 audience: landingpage
+permalink: /faq/
 breadcrumb: "Support"
 menu-item: true
 has-sub-nav: true
 sub-nav:
     links:
       - text: "FAQ"
-        url:  "/faq"
+        url:  "/faq/"
       - text: "Troubleshooting"
-        url:  "/missing-conversations"
+        url:  "/missing-conversations/"
       - text: "Report an Issue"
-        url:  "/report-issue"
+        url:  "/report-issue/"
 ---
 
 <div class="page type-page status-publish hentry">

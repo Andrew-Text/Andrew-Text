@@ -7,7 +7,7 @@
         <div id="branding" role="banner">
           <h1 id="site-title">
             <span>
-            <a href="{{site.baseurl}}/" title="AllYourTexts" rel="home"><img src="{{site.basurl}}/images/logo.png" title="" alt="" /></a>
+            <a href="{{site.baseurl}}/" title="AllYourTexts" rel="home"><img src="{{site.basurl}}/images/logo.png" title="" alt="AllYourTexts Logo" /></a>
             </span>
           </h1>
         </div>
@@ -26,7 +26,7 @@
             {% for page in site.pages %}
               {% if page.menu-item %}
                 <li class="menu-item menu-item-type-post_type menu-item-object-page {% if page.url == currentPg %}current-menu-item current_page_item{% endif %}">
-                  <a href='{% if page.breadcrumb == "github" %}{{site.url_GitHub}}{% else %}{{site.baseurl}}{{page.url}}{% endif %}' {% if page.breadcrumb == "github" %}onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://github.com/AllYourTexts/AllYourTexts', 'Github']);{% endif %}">{{page.breadcrumb}}</a>
+                  <a href='{% if page.breadcrumb == "github" %}{{site.url_GitHub}}{% else %}{{site.baseurl}}{{page.url}}{% endif %}' {% if page.breadcrumb == "github" %}onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://github.com/AllYourTexts/AllYourTexts', 'Github']);"{% endif %}>{{page.breadcrumb}}</a>
 
                 {% if page.sub-nav %}
                 <ul class="sub-menu">

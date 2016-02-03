@@ -3,9 +3,8 @@
 title: AllYourTexts
 
 permalink: /:title
-baseurl: http://www.allyourtexts.com
+baseurl: ""
 include: ['_pages']
-markdown: rdiscount
 exclude:
   - .gitignore
   - README.md

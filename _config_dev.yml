@@ -5,7 +5,6 @@ title: AllYourTexts
 permalink: /:title
 baseurl: ""
 include: ['_pages']
-markdown: rdiscount
 exclude:
   - .gitignore
   - README.md

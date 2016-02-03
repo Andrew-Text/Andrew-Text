@@ -1,4 +1,4 @@
-# [AllYourTexts](http://thewaysnrubthinks.github.io/MikeDownSouth/) Source Code
+# [AllYourTexts](http://allyourtexts.com) Source Code
 
 This is the source code of AllYourTexts.com, a website dedicated to providing a knowledgebase for the AllYourTexts application.  The website for the application is built using [Jekyll](http://jekyllrb.com) and utilizing [GitHub Pages](https://pages.github.com/) to publish and host the site.
 
